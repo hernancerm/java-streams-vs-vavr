@@ -1,0 +1,24 @@
+plugins {
+    id 'application'
+}
+
+group 'hercerm.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/io.vavr/vavr
+    implementation group: 'io.vavr', name: 'vavr', version: '0.10.3'
+}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion("11")
+    targetCompatibility = JavaVersion.toVersion("11")
+}
+
+application {
+    mainClass = 'hercerm.example.streamsvsvavr.App'
+}
