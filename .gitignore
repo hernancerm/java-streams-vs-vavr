@@ -1,7 +1,12 @@
 # Build
 /build
+/bin
 .gradle
 
 # IDE
 .idea
 .*iml
+.classpath
+.project
+.settings
+
